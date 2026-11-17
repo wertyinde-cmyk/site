@@ -1,110 +1,32 @@
- <!doctype html>
+<!doctype html>
 <html lang="ru">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Набор строителей</title>
-<meta name="description" content="Набор строительных специалистов: сварщики, монтажники, прорабы. Заявка через Telegram за 5 минут.">
+<title>ООО «Регион» | Строительство и монтаж</title>
+<meta name="description" content="Строительство, монтаж металлоконструкций, сварочные и отделочные работы. Работа для строителей.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap">
-<style>
-:root{--accent:#FF7A1A;--ink:#16181C;--bg:#F4F2EE;--bg2:#E8E4DC;--muted:#4A4F57}
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:'Inter',system-ui,sans-serif}
-a{color:inherit;text-decoration:none}
-a:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
-h1,h2{font-family:'Space Grotesk',sans-serif;font-weight:700;margin:0}
-.wrap{width:100%;max-width:1200px;margin:0 auto}
-.sec{padding:72px 24px}
-.row{display:flex;flex-wrap:wrap;gap:20px}
-.col{flex:1 1 240px;min-width:0}
-.btn{display:inline-flex;align-items:center;justify-content:center;min-height:56px;padding:0 32px;background:var(--accent);color:var(--ink);border-radius:4px;font-weight:600;font-size:17px}
-.btn-line{min-height:44px;padding:0 22px;background:none;border:2px solid var(--ink);font-size:15px}
-.eyebrow{font-weight:600;font-size:14px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
-h2{font-size:40px;letter-spacing:-.02em}
-.card{background:var(--bg);border-radius:6px;padding:28px;display:flex;flex-direction:column;gap:14px}
-.num{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:44px;color:var(--accent);-webkit-text-stroke:1px var(--ink)}
-.card b{font-size:20px}
-.card span{font-size:16px;line-height:1.5;color:var(--muted)}
-.cond{border-top:4px solid var(--ink);padding-top:18px;display:flex;flex-direction:column;gap:8px}
-.cond .eyebrow{font-size:14px}
-.cond div:last-child{font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:26px}
-.job{padding:18px 0;border-bottom:1px solid #3A3E45;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:26px}
-@media (max-width:640px){h1{font-size:40px!important}h2{font-size:30px}.sec{padding:48px 20px}}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<header style="padding:20px 24px">
-<div class="wrap" style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px">
-<div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:22px">[НАЗВАНИЕ КОМПАНИИ]</div>
+<header>
+<div class="top">
+<a class="logo" href="index.html">ООО «Регион»</a>
 <a class="btn btn-line" href="https://t.me/your_bot">Подать заявку</a>
 </div>
+<nav class="menu" aria-label="Разделы сайта"><a href="index.html" aria-current="page">Главная</a><a href="uslugi.html">Услуги</a><a href="proekty.html">Проекты</a><a href="rabota.html">Работа у нас</a><a href="anketa.html">Анкета</a><a href="o-kompanii.html">О компании</a><a href="novosti.html">Новости</a><a href="kontakty.html">Контакты</a></nav>
 </header>
-
 <main>
-<section style="padding:56px 24px 72px">
-<div class="wrap" style="display:flex;flex-wrap:wrap;align-items:center;gap:48px">
-<div style="flex:1 1 480px;min-width:0;display:flex;flex-direction:column;gap:28px">
-<div class="eyebrow">Набор строительных специалистов</div>
-<h1 style="font-size:60px;line-height:1.02;letter-spacing:-.03em;margin:0;font-family:'Space Grotesk',sans-serif">Работа на стройке без долгих собеседований</h1>
-<p style="margin:0;font-size:19px;line-height:1.55;color:var(--muted);max-width:540px">Ответьте на несколько вопросов в Telegram за 5 минут. Если вы подходите, мы свяжемся с вами и расскажем про объект, график и оплату.</p>
-<div style="display:flex;flex-wrap:wrap;gap:14px;align-items:center">
-<a class="btn" href="https://t.me/your_bot">Подать заявку в Telegram</a>
-<a href="#how" style="display:inline-flex;align-items:center;min-height:56px;padding:0 12px;font-weight:600;font-size:16px;text-decoration:underline;text-underline-offset:4px">Как проходит отбор</a>
-</div>
-</div>
-<div style="flex:1 1 340px;min-width:0;background:var(--ink);color:var(--bg);border-radius:6px;padding:36px">
-<div class="eyebrow" style="color:#FF9A4D;margin-bottom:22px">Кого мы ищем</div>
-<div class="job">Сварщики</div>
-<div class="job">Монтажники</div>
-<div class="job">Прорабы</div>
-<div style="padding-top:18px;font-size:16px;color:#C9CCD1">И другие строительные специалисты: [ДОБАВИТЬ СПЕЦИАЛЬНОСТИ]</div>
-</div>
-</div>
-</section>
-
-<section id="how" class="sec" style="background:var(--bg2)">
-<div class="wrap" style="display:flex;flex-direction:column;gap:40px">
-<h2>Как проходит отбор</h2>
-<div class="row">
-<div class="col card"><div class="num">1</div><b>Откройте бота</b><span>Нажмите кнопку «Подать заявку» и запустите бота в Telegram.</span></div>
-<div class="col card"><div class="num">2</div><b>Дайте согласие и ответьте на вопросы</b><span>Согласие на обработку данных, затем короткие вопросы про опыт и разряд.</span></div>
-<div class="col card"><div class="num">3</div><b>Получите ответ</b><span>Если вы подходите, с вами свяжется менеджер: [СРОК ОТВЕТА].</span></div>
-</div>
-</div>
-</section>
-
-<section class="sec">
-<div class="wrap" style="display:flex;flex-direction:column;gap:40px">
-<h2>Условия работы</h2>
-<div class="row">
-<div class="col cond"><div class="eyebrow">Оплата</div><div>[ВАША СТАВКА]</div></div>
-<div class="col cond"><div class="eyebrow">Объекты</div><div>[ГОРОД / РЕГИОН]</div></div>
-<div class="col cond"><div class="eyebrow">График</div><div>[ГРАФИК РАБОТЫ]</div></div>
-<div class="col cond"><div class="eyebrow">Жильё и питание</div><div>[УСЛОВИЯ]</div></div>
-</div>
-</div>
-</section>
-
-<section class="sec" style="background:var(--ink);color:var(--bg)">
-<div class="wrap" style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:32px">
-<div style="flex:1 1 420px;min-width:0;display:flex;flex-direction:column;gap:14px">
-<h2 style="line-height:1.1">Готовы выйти на объект?</h2>
-<div style="font-size:18px;line-height:1.5;color:#C9CCD1">Заявка занимает несколько минут и ничего не стоит.</div>
-</div>
-<a class="btn" href="https://t.me/your_bot">Подать заявку в Telegram</a>
-</div>
-</section>
+<section class="hero"><div class="wrap"><div class="eyebrow">[ПОЗИЦИОНИРОВАНИЕ КОМПАНИИ]</div><h1>Строительство и монтаж металлоконструкций</h1><p class="lead">[КОРОТКО О КОМПАНИИ: 1-2 ПРЕДЛОЖЕНИЯ О ТОМ, ЧЕМ ВЫ ЗАНИМАЕТЕСЬ И ДЛЯ КОГО]</p><div class="btns"><a class="btn" href="kontakty.html">Заказать услугу</a><a class="btn btn-ghost" href="rabota.html">Работа у нас</a></div></div></section><section class="sec alt"><div class="wrap stack"><h2>Основные направления</h2><div class="row"><div class="col card"><div class="ico i1"></div><h3>Строительство</h3><p>[КРАТКО: ЧТО ВХОДИТ В НАПРАВЛЕНИЕ]</p><a class="more" href="uslugi.html">Подробнее</a></div><div class="col card"><div class="ico i2"></div><h3>Монтаж металлоконструкций</h3><p>[КРАТКО: ЧТО ВХОДИТ В НАПРАВЛЕНИЕ]</p><a class="more" href="uslugi.html">Подробнее</a></div><div class="col card"><div class="ico i3"></div><h3>Сварочные работы</h3><p>[КРАТКО: ЧТО ВХОДИТ В НАПРАВЛЕНИЕ]</p><a class="more" href="uslugi.html">Подробнее</a></div><div class="col card"><div class="ico i4"></div><h3>Отделочные работы</h3><p>[КРАТКО: ЧТО ВХОДИТ В НАПРАВЛЕНИЕ]</p><a class="more" href="uslugi.html">Подробнее</a></div><div class="col card"><div class="ico i5"></div><h3>Промышленный монтаж</h3><p>[КРАТКО: ЧТО ВХОДИТ В НАПРАВЛЕНИЕ]</p><a class="more" href="uslugi.html">Подробнее</a></div><div class="col card"><div class="ico i6"></div><h3>Другие направления</h3><p>[ДОБАВИТЬ НАПРАВЛЕНИЯ]</p><a class="more" href="uslugi.html">Подробнее</a></div></div></div></section><section class="sec"><div class="wrap stack"><h2>Преимущества и опыт</h2><div class="row"><div class="col cond"><div class="eyebrow">Опыт</div><div class="big">Компания с 2011 года</div></div><div class="col cond"><div class="eyebrow">Объекты</div><div class="big">[КОЛИЧЕСТВО / МАСШТАБ]</div></div><div class="col cond"><div class="eyebrow">Команда</div><div class="big">[СОСТАВ КОМАНДЫ]</div></div></div></div></section><section class="sec dark"><div class="wrap row" style="align-items:center;justify-content:space-between"><div class="col stack" style="gap:14px"><div class="eyebrow">О компании</div><h2>Коротко о нас</h2><p class="lead">[КРАТКАЯ ПРЕЗЕНТАЦИЯ КОМПАНИИ: 3-4 ПРЕДЛОЖЕНИЯ]</p></div><div class="btns"><a class="btn" href="o-kompanii.html">Подробнее о компании</a></div></div></section>
 </main>
-
-<footer style="padding:28px 24px">
-<div class="wrap" style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:14px;color:var(--muted)">
-<div>[НАЗВАНИЕ КОМПАНИИ], [ГОРОД]</div>
-<div>Контакты: [ТЕЛЕФОН / ПОЧТА]</div>
+<footer>
+<div class="wrap">
+<div>ООО «Регион», г. Комсомольск-на-Амуре</div>
+<div>ИНН 2703062283 · ОГРН 1112703005370</div>
+<div><a href="tel:+74217252501">8 (4217) 25-25-01</a> · <a href="mailto:region.ooo@bk.ru">region.ooo@bk.ru</a></div>
 </div>
 </footer>
-
 </body>
 </html>
